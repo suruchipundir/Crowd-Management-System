@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    tools:context=".EventDetailFragment">
+    <TextView
+        android:id="@+id/event_detail"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16sp"
+        android:textIsSelectable="true"
+        tools:context=".EventDetailFragment"
+        android:textColor="@color/textColor"
+        />
+    <Button
+        android:id="@+id/btnCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_detail"
+        android:layout_marginTop="40sp"
+        android:background="#140D3E"
+        android:text="Check Crowd Count"
+        android:textColor="#FFFFFF"
+        android:onClick="onCountButtonClicked"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Crowd Behavior"
+        android:id="@+id/btnBehavior"
+        android:layout_below="@+id/btnCount"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:onClick="onBehaviorButtonClicked" />
+    </RelativeLayout>

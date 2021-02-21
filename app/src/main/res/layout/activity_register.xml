@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:padding="50sp"
+    android:background="@color/bg">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_below="@+id/editUN"
+        android:id="@+id/editName"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:layout_marginTop="10sp"
+        android:textColorHint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Id"
+        android:layout_below="@+id/editName"
+        android:id="@+id/editEmail"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:layout_marginTop="15sp"
+        android:textColorHint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_below="@+id/editEmail"
+        android:id="@+id/editPhone"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:layout_marginTop="15sp"
+        android:textColorHint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editPhone"
+        android:id="@+id/editPassword"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:layout_marginTop="15sp"
+        android:textColorHint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:layout_below="@+id/editPassword"
+        android:id="@+id/editConfirmPwd"
+        android:layout_marginTop="15sp"
+        android:textSize="16sp"
+        android:textColorHint="@color/textColor"
+        android:textColor="@color/textColor"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editConfirmPwd"
+        android:layout_marginTop="15sp"
+        android:id="@+id/typeSpinner"
+        style="@style/mySpinnerItemStyle"
+        android:popupBackground="@color/bg"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/typeSpinner"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:onClick="onRegisterButtonClicked"/>
+
+</RelativeLayout>

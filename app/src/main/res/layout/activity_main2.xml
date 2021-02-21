@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+        <VideoView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/findCountButton"
+            android:layout_marginBottom="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/originalVideo"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="overlay output"
+            android:onClick="onOverlayClicked"
+            android:id="@+id/overlayClicked"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/overlayClicked"
+            android:text="Flow output"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:onClick="onFlowClicked"
+            android:id="@+id/flowClicked"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/flowClicked"
+            android:text="ColorMap output"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:onClick="oncolorMapClicked"
+            android:id="@+id/colorMapClicked"
+            />
+
+        <!--<VideoView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/findCountButton"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/overlayVideo"
+            />
+
+        <VideoView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/overlayVideo"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/flowVideo"
+            />
+
+        <VideoView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/flowVideo"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/colormapVideo"
+            />-->
+
+</RelativeLayout>

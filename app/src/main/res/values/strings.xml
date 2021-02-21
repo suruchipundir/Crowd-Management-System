@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Crowd Management System</string>
+    <string-array name="participantType">
+        <item>Police</item>
+        <item>Participant</item>
+    </string-array>
+    <string name="title_event_list">Events</string>
+    <string name="title_event_detail">Event Detail</string>
+    <string name="action_settings">Setings</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_crowd_count">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Upload</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

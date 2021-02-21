@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.chaquo.python'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+    ndkVersion "21.3.6528147"
+
+    defaultConfig {
+        applicationId "com.example.crowdmanagementsystem"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+        sourceSets {
+            main {
+                python{
+                    srcDirs=["src/main/python"]
+                }
+            }
+        }
+        //path to python executable
+        python {
+           // buildPython "C:/Users/Suruchi  Pundir/AppData/Local/Programs/Python/Python37/python.exe"
+            //pip {
+              //  install "numpy"
+                //install "h5py"
+           //     install "torch"
+             //   install "Pillow"
+               // install "torchvision"
+        //        install "matplotlib"
+          //      install "opencv-python"
+            //}
+
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.google.firebase:firebase-firestore:22.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.firebaseui:firebase-ui-firestore:7.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

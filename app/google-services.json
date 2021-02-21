@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "808463305495",
+    "firebase_url": "https://crowd-management-system-b10b0.firebaseio.com",
+    "project_id": "crowd-management-system-b10b0",
+    "storage_bucket": "crowd-management-system-b10b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808463305495:android:9b5954895fc25f18ad8552",
+        "android_client_info": {
+          "package_name": "com.example.crowdmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808463305495-gadqvnvlcnejpkvta6duj7bqjvl5sk7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crowdmanagementsystem",
+            "certificate_hash": "dbbab564df6860828212f7f346f066b134d3811c"
+          }
+        },
+        {
+          "client_id": "808463305495-ldbhglv05j8c9qob25n65pl4e3lcvdip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC3j5r671Olm2abMJ3ZqserzMjv3Ox0WE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808463305495-ldbhglv05j8c9qob25n65pl4e3lcvdip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
